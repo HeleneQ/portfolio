@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfolio of Hélène Quernet, Engineering student specializing in IT at ESTIA, France. Showcasing academic projects, software development, and creative work.">
+    <meta name="author" content="Hélène Quernet">
+    <meta name="keywords" content="engineering, IT, portfolio, software development, ESTIA, France">
+    
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hélène Quernet - Portfolio</title>
+
+</head>
+
+<body>
+
+    <a id="skipper" href="#main">Skip to Main</a>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">HQ<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#creative">Creative</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="weather.html" class="nav-btn">Weather App</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <span class="mode-icon">🌓</span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Hélène Quernet</h1>
+            <p class="hero-subtitle">Second Year Engineering Student @ ESTIA | Numerical Conception and Innovation</p>
+            <p class="hero-location">Bidart, France</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- About Section -->
+        <section id="about" class="container">
+            <div class="section-grid">
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p>I am an engineering student at <strong>ESTIA Institute of Technology</strong>, passionate about the intersection of technology and creative problem-solving. My studies focus on IT systems, software development, and building innovative digital solutions.</p>
+                    
+                    <div class="interests-tags">
+                        <span class="tag">IT - Full-Stack Web Development</span>
+                        <span class="tag">Engineering & Applied Sciences</span>
+                        <span class="tag">Aeronautics</span>
+                        <span class="tag">Sport practice - Horseriding | Hiking</span>
+                    </div>
+
+                    <div class="education-info">
+                        <a href="https://www.estia.fr/" target="_blank" class="school-link">
+                            <img src="img/estia.jpeg" alt="ESTIA Logo" class="mini-logo">
+                            <span>ESTIA Engineering School</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <figure class="profile-frame">
+                        <img src="img/profile.jpg" alt="Hélène Quernet - Professional Portrait">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Technical) -->
+        <section id="projects" class="bg-light">
+            <div class="container">
+                <h2 class="section-title">Technical Projects</h2>
+                <p>A selection of academic and personal projects demonstrating my technical skills:</p><br>
+                <div class="project-grid">
+                    
+                    <!-- GitHub Project -->
+                    <article class="project-card">
+                        <div class="project-info">
+                            <h3>Browser Programming Repository</h3>
+                            <p>A responsive portfolio website developed using HTML, CSS, and JavaScript. Features include dark mode, dynamic content, and fundamental backend integration concepts.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/HeleneQ/browser-programming.git" class="link">GitHub Repository</a>
+                                <a href="https://heleneq.github.io/browser-programming/" class="link">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-info">
+                            <h3>StreakFlow – Habit Tracker</h3>
+                            <p>A habit tracking web application developed in 2026, consolidating key concepts learned in web development, including state management, UI design, and user interaction.</p>
+                            <div class="project-links">
+                                <a href="https://streakflow-bay.vercel.app/" class="link">Live App</a>
+                                <a href="https://github.com/HeleneQ/streakflow.git" class="link">GitHub Repository</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-info">
+                            <h3>Note-Taking Application</h3>
+                            <p>A lightweight note-taking web app focused on simplicity and usability, implementing CRUD operations and clean UI principles.</p>
+                            <div class="project-links">
+                                <a href="https://note-app-azure-phi.vercel.app/" class="link">Live App</a>
+                                <a href="https://github.com/HeleneQ/note-app.git" class="link">GitHub Repository</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-info">
+                            <h3>Weather Application</h3>
+                            <p>A dynamic web application using external APIs to display real-time weather data. Focus on asynchronous JavaScript and API integration.</p>
+                            <div class="project-links">
+                                <a href="weather.html" class="link">Live Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- API Demo Project -->
+                    <article class="project-card" id="data_demo">
+                        <div class="project-info">
+                            <h3>Data Integration Demo</h3>
+                            <p>Demonstration of real-time data fetching using asynchronous JavaScript and public APIs.</p>
+                            <button id="load_data" class="btn btn-data">Fetch Data</button>
+                            <div id="output_container">
+                                <p id="output_data">Awaiting input...</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Workspace/Engineering -->
+                    <article class="project-card">
+                        <img src="img/technological-hall.jpg" alt="Engineering workspace" class="card-img">
+                        <div class="project-info">
+                            <h3>Engineering Systems Project</h3>
+                            <p>Practical work carried out in ESTIA’s technological hall, involving hardware-software integration and applied engineering systems.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creative Section (Sewing) -->
+        <section id="creative" class="container">
+            <h2 class="section-title">Creative Engineering: Sewing</h2>
+            <p class="section-subtitle">Beyond software, I apply engineering principles to garment design, focusing on precision, structure, and material behavior.</p><br>
+            
+            <div class="creative-grid">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <figure class="carousel-slide">
+                            <img src="img/dress-front.jpg" alt="Custom polka dot dress - front view">
+                            <figcaption>Front View</figcaption>
+                        </figure>
+                        <figure class="carousel-slide">
+                            <img src="img/dress-left.jpg" alt="Custom polka dot dress - side detail">
+                            <figcaption>Side Detail</figcaption>
+                        </figure>
+                        <figure class="carousel-slide">
+                            <img src="img/dress-model.jpg" alt="Dress technical patern">
+                            <figcaption>Technical Pattern</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <!-- Carousel Navigation -->
+                    <button class="carousel-btn prev" aria-label="Previous image">❮</button>
+                    <button class="carousel-btn next" aria-label="Next image">❯</button>
+                </div>
+                
+                <div class="video-showcase">
+                    <h3>Technique & Process</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/09NK2KpUlWE" title="Sewing Techniques: Biais" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/YX8mxEx_1k8" title="Sewing Techniques: Skirt" allowfullscreen></iframe>
+                    </div>
+                    <br><p class="caption">Researching and applying advanced stitching techniques.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <button id="contact-btn" class="btn btn-contact">Quick Contact Info</button>
+        <p>Savonia UAS email: <a href="mailto:helene.quernet@edu.savonia.fi">helene.quernet@edu.savonia.fi</a></p>
+        <p>ESTIA email: <a href="mailto:helene.quernet@etu.estia.fr">helene.quernet@etu.estia.fr</a></p>
+        <p><a href="https://github.com/HeleneQ">GitHub account</a></p>
+        <p><a href="https://www.instagram.com/lelene.qrnt/">Private Instagram Account</a></p>
+        <p>&copy; © 2026 Hélène Quernet. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

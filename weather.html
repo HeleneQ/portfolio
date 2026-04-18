@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App - Hélène Quernet</title>
+</head>
+
+<body>
+    <a id="skipper" href="#main">Skip to content</a>
+
+    <!-- Standard Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">HQ<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="#kuopio-weather">Quick View</a></li>
+                <li><a href="#other-city">Search</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <span class="mode-icon">🌓</span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding: 3rem 2rem;">
+        <div class="hero-content">
+            <h1>Weather Explorer</h1>
+            <p class="hero-subtitle">Real-time meteorological data via Open-Meteo API</p>
+        </div>
+    </header>
+    
+    <main id="main">
+        <!-- Quick Access Section -->
+        <section id="kuopio-weather" class="container">
+            <h2 class="section-title">Local Weather</h2>
+            <p>Instant access to weather data for Kuopio, Finland.</p>
+            <div style="margin-top: 1.5rem;">
+                <button id="btnKuopio" class="btn btn-primary btn-weather">Check Kuopio Weather</button>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section id="other-city" class="bg-light">
+            <div class="container">
+                <h2 class="section-title">Search for a City</h2>
+                <div class="search-container" style="max-width: 500px;">
+                    <input 
+                        type="text" 
+                        id="cityInput" 
+                        placeholder="Enter city name (e.g. Paris, Tokyo)..."
+                        list="cityList"
+                        autocomplete="off"
+                    >
+                    <datalist id="cityList"></datalist>
+                    <p id="input-info">Type at least 3 characters for suggestions</p>
+                    <button id="btnValidate" class="btn btn-primary btn-weather" disabled>Get Weather</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="container">
+            <div id="weatherBox" class="project-card">
+                <h2>Weather Details</h2>
+                <p><strong>City:</strong> <span id="city">-</span></p>
+                <p><strong>Temperature:</strong> <span id="temperature">-</span></p>
+                <p><strong>Wind Speed:</strong> <span id="wind">-</span></p>
+                
+                <pre id="output" style="margin-top: 1rem; font-size: 0.7rem; color: red;"></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <button id="contact-btn" class="btn btn-contact">Quick Contact Info</button>
+        <p>Savonia UAS: <a href="mailto:helene.quernet@edu.savonia.fi">helene.quernet@edu.savonia.fi</a></p>
+        <p>ESTIA: <a href="mailto:helene.quernet@etu.estia.fr">helene.quernet@etu.estia.fr</a></p>
+        <p>&copy; 2026 Hélène Quernet. All rights reserved.</p>
+    </footer>
+
+    <script src="weather.js"></script>
+</body>
+</html>
