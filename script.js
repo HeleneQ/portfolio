@@ -1,41 +1,44 @@
 console.log("PortFolio page loaded successfully!");
 
 // --- GLOBAL CONFIG & DATA ---
-const skills = ["HTML", "CSS", "JavaScript", "Python", "IoT", "Java", "Git & GitHub", "C Programming"];
+const skillCategories = [
+    { 
+        title: "Programming", 
+        list: ["TypeScript", "Python", "C", "Java", "JavaScript", "Matlab", "HTML/CSS","JSON","SQL"] 
+    },
+    { 
+        title: "Software & Tools", 
+        list: ["OnShape (CAD)", "VS Code", "Git/GitHub", "Office 365"] 
+    },
+    { 
+        title: "Professional", 
+        list: ["Back-end Development", "Project Management", "Problem Solving", "Technical Research"] 
+    }
+];
+
 const mainElement = document.getElementById("main");
 
 // --- DYNAMIC SKILLS INJECTION ---
 function injectSkills() {
-    const skillsSection = document.createElement("section");
-    skillsSection.id = "skills";
-    skillsSection.className = "container bg-light";
+    const skillsContainer = document.getElementById("skills");
+    if (!skillsContainer) return; // Guard clause
 
-    const skillsTitle = document.createElement("h2");
-    skillsTitle.className = "section-title";
-    skillsTitle.innerText = "Technical Skills";
-    
-    const skillsDesc = document.createElement("p");
-    skillsDesc.innerText = "Technical skills developed during my studies and personal projects:";
+    let html = '<h2 class="section-title">Technical Expertise</h2>';
+    html += '<div class="skills-grid-professional">';
 
-    const skillsList = document.createElement("ul");
-    skillsList.classList.add("skills-list-dynamic");
-
-    skills.forEach(skill => {
-        const li = document.createElement("li");
-        li.innerText = skill;
-        skillsList.appendChild(li);
+    skillCategories.forEach(cat => {
+        html += `
+            <div class="skill-category-card">
+                <h3>${cat.title}</h3>
+                <ul class="professional-skills-list">
+                    ${cat.list.map(skill => `<li>${skill}</li>`).join('')}
+                </ul>
+            </div>
+        `;
     });
 
-    skillsSection.appendChild(skillsTitle);
-    skillsSection.appendChild(skillsDesc);
-    skillsSection.appendChild(skillsList);
-
-    const creativeSection = document.getElementById("creative");
-    if (creativeSection) {
-        creativeSection.insertAdjacentElement('afterend', skillsSection);
-    } else {
-        mainElement.appendChild(skillsSection);
-    }
+    html += '</div>';
+    skillsContainer.innerHTML = html;
 }
 injectSkills();
 
