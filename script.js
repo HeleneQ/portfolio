@@ -20,7 +20,7 @@ const mainElement = document.getElementById("main");
 
 // --- DYNAMIC SKILLS INJECTION ---
 function injectSkills() {
-    const skillsContainer = document.getElementById("skills");
+    const skillsContainer = document.getElementById("skills-container");
     if (!skillsContainer) return;
 
     let html = '<h2 class="section-title">Technical Expertise</h2>';

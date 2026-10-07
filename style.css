@@ -314,15 +314,24 @@ input {
    ========================================================= */
 
 .container {
+  width: 100%;
   max-width: 1180px;
   margin: 0 auto;
   padding: 5rem 1.5rem;
 }
 
 .bg-light {
+  width: 100%;
   background:
-    linear-gradient(rgba(232, 213, 189, 0.18), rgba(232, 213, 189, 0.18)),
+    linear-gradient(
+      rgba(232, 213, 189, 0.18),
+      rgba(232, 213, 189, 0.18)
+    ),
     var(--sand-light);
+}
+
+.bg-light > .container {
+  background: transparent;
 }
 
 section + section {
