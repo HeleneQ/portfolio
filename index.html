@@ -2,17 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Portfolio of Hélène Quernet, Engineering student specializing in IT at ESTIA, France. Showcasing academic projects, software development, and creative work.">
     <meta name="author" content="Hélène Quernet">
     <meta name="keywords" content="engineering, IT, portfolio, software development, ESTIA, France">
     
     <link rel="stylesheet" href="style.css" />
-
     <title>Hélène Quernet - Portfolio</title>
-
 </head>
 
 <body>
@@ -21,16 +17,15 @@
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">HQ<span>.</span></a>
+            <a href="index.html" class="logo">HQ<span>.</span></a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work Experiences</a></li>
                 <li><a href="#school">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Studies Projects</a></li>
                 <li><a href="#creative">Creative</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="weather.html" class="nav-btn">Weather App</a></li>
             </ul>
             <button id="theme-toggle" aria-label="Toggle Dark Mode">
                 <span class="mode-icon">🌓</span>
@@ -41,13 +36,15 @@
     <header class="hero">
         <div class="hero-content">
             <h1 class="fade-in">Hélène Quernet</h1>
-            <p class="hero-subtitle">Second Year Engineering Student @ ESTIA | Numerical Conception and Innovation</p>
+            <p class="hero-subtitle">Final Year Engineering Student @ ESTIA | Numerical Conception and Innovation</p>
             <p class="hero-location">Bidart, France</p>
-            <p class="hero-location">Seeking Internship: June – August 2026</p>
+            <p class="hero-location">Seeking Final-Year Internship: March – August 2027</p>
             <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="CV_en_2026-05-05_HQ.pdf" class="btn btn-secondary" download>
-                    <span class="icon">📄</span> Download CV (PDF)
+                <a href="CV_2026-10-06_en.pdf" class="btn btn-secondary" download>
+                    <span class="icon">📄</span> Download CV in English (PDF)
+                </a>
+                <a href="CV_2026-10-06_fr.pdf" class="btn btn-secondary" download>
+                    <span class="icon">📄</span> Download CV in French (PDF)
                 </a>
             </div>
         </div>
@@ -60,140 +57,178 @@
             <div class="section-grid">
                 <div class="about-text">
                     <h2 class="section-title">About Me</h2>
-                    <p>I am an engineering student at <strong>ESTIA Institute of Technology</strong>, passionate about the intersection of technology and creative problem-solving. My studies focus on IT systems, software development, and building innovative digital solutions.</p>
+                    <p>I am a final-year Engineering student at <strong>ESTIA Institute of Technology</strong>, specializing in <strong>Digital Design and Innovation</strong> and pursuing a double degree at Cranfield University. With hands-on experience in full-stack web development (React/TypeScript, Node.js/Express) applied to GIS and agricultural platforms, I bridge technical rigor with innovative user experience design. I am currently seeking a <strong>6-month final-year internship</strong> starting <strong>March 2027</strong>.</p>
                     
                     <div class="interests-tags">
-                        <span class="tag">IT - Full-Stack Web Development</span>
-                        <span class="tag">Engineering & Applied Sciences</span>
-                        <span class="tag">Aeronautics</span>
-                        <!-- <span class="tag">Sport practice - Horseriding | Hiking</span> -->
-                    </div>
-
-                    <div class="education-info">
-                        <a href="https://www.estia.fr/" target="_blank" class="school-link">
-                            <img src="img/estia.jpeg" alt="ESTIA Logo" class="mini-logo">
-                            <span>ESTIA Engineering School</span>
-                        </a>
+                        <span class="tag">Full-Stack Web Development</span>
+                        <span class="tag">Digital Design &amp; Innovation</span>
+                        <span class="tag">React / TypeScript &amp; Node.js</span>
+                        <span class="tag">Software &amp; GIS Systems</span>
                     </div>
                 </div>
                 <div class="about-image">
                     <figure class="profile-frame">
-                        <img src="img/profile.jpg" alt="Hélène Quernet - Professional Portrait">
+                        <img src="img/profile.jpg" alt="Hélène Quernet Portrait">
                     </figure>
                 </div>
             </div>
         </section>
 
-
         <!-- Experiences section (Professional) -->
-        <section id="experience" class="bg-light">
-           <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-timeline">
+        <section id="work" class="bg-light">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="experience-timeline">
 
-                <!-- internship sig -->
-                <div class="exp-item">
-                    <div class="exp-header">
-                        <h3>Intern - Back-end Development</h3>
-                        <span class="exp-company">SIG-IMAGE | Bidart, France</span>
-                        <span class="exp-date">Jan 2025 - March 2025</span>
+                    <!-- Internship Quest Innov -->
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h3>Full-Stack Developer Intern</h3>
+                            <span class="exp-company">Quest Innov | Dax, France</span>
+                            <span class="exp-date">June 2026 – Aug 2026</span>
+                        </div>
+                        <ul class="work_list">
+                            <li>Engineered end-to-end features (from UI to backend logic) for an agricultural management web application using <strong>React/TypeScript</strong>, <strong>RTK Query</strong>, <strong>Node.js/Express</strong>.</li>
+                            <li>Integrated real-time push notifications using <strong>OneSignal</strong> with browser permission handling and cross-device synchronization.</li>
+                            <li>Resolved complex bugs and performance bottlenecks within a multi-microservice architecture (stale cache issues, API failures, Git conflict resolution).</li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li>Developed a public lighting consumption module using <strong>TypeScript</strong>.</li>
-                        <li>Implemented data processing algorithms to optimize energy efficiency.</li>
-                        <li>Collaborated with the engineering team for system integration.</li>
-                    </ul>
-                </div>
 
-                <!-- game master -->
-                 <div class="exp-item">
-                    <div class="exp-header">
-                        <h3>Game Master</h3>
-                        <span class="exp-company">Tempus Escape | Bayonne, France</span>
-                        <span class="exp-date">Oct 2024 - June 2025</span>
+                    <!-- McDonald's -->
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h3>Multi-Skilled Team Member</h3>
+                            <span class="exp-company">McDonald's | Anglet, France</span>
+                            <span class="exp-date">June 2025 – Dec 2025</span>
+                        </div>
+                        <ul class="work_list">
+                            <li>Managed high-volume customer orders and food preparation under strict time constraints.</li>
+                            <li>Demonstrated exceptional adaptability, stress management, and teamwork in a fast-paced environment.</li>
+                        </ul>
                     </div>
-                    <p>Managed technical supervision and maintenance of interactive game rooms, focusing on responsiveness and player experience.</p>
-                </div>
 
-                <!-- McDonald's -->
-                <div class="exp-item">
-                    <div class="exp-header">
-                        <h3>Multi-skilled Employee</h3>
-                        <span class="exp-company">McDonald's | Anglet, France</span>
-                        <span class="exp-date">June 2025 - Dec 2025</span>
+                    <!-- Internship SIG-IMAGE -->
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h3>Back-End Developer Intern</h3>
+                            <span class="exp-company">SIG-IMAGE | Bidart, France</span>
+                            <span class="exp-date">Jan 2025 – March 2025</span>
+                        </div>
+                        <ul class="work_list">
+                            <li>Architected and implemented a public lighting energy consumption calculation module in <strong>TypeScript</strong>.</li>
+                            <li>Designed data processing algorithms to analyze and optimize municipal energy consumption.</li>
+                            <li>Collaborated closely with cross-functional teams to integrate backend modules seamlessly into existing client applications.</li>
+                        </ul>
                     </div>
-                    <p>Student employment demonstrating rigorous time management, teamwork, and customer service in a high-pressure environment.</p>
-                </div>
 
+                    <!-- Tempus Escape -->
+                    <div class="exp-item">
+                        <div class="exp-header">
+                            <h3>Game Master</h3>
+                            <span class="exp-company">Tempus Escape | Bayonne, France</span>
+                            <span class="exp-date">Oct 2024 – June 2025</span>
+                        </div>
+                        <ul class="work_list">
+                            <li>Designed, facilitated, and supervised immersive interactive experiences, strengthening team communication and adaptability.</li>
+                            <li>Provided technical setup, maintenance, and real-time monitoring of interactive game rooms.</li>
+                            <li>Demonstrated swift problem-solving and responsiveness by tailoring game scenarios to enhance customer experience.</li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-        </div>
         </section>
 
-        <!-- education -->
+        <!-- Education section -->
         <section id="school" class="container">
             <h2 class="section-title">Education</h2>
             <div class="education-grid">
+
+                <!-- ESTIA & International Mobility -->
                 <div class="edu-item">
                     <h3>Engineering Degree</h3>
-                    <p><strong>ESTIA Institute of Technologies</strong> | Since 2024</p>
-                    <p>Specialization: Digital Design & Innovation (CNI).</p>
+                    <p><strong>ESTIA Institute of Technology</strong> | Bidart, France — <em>Since Sept 2024</em></p>
+                    <p><strong>Specialization:</strong> Digital Design and Innovation (CNI)</p>
+                    
                     <div class="highlight-box">
-                        <strong>🌍 Erasmus+ Mobility:</strong> Finland (Jan – May 2026)
+                        <p><strong>Double-Degree Exchange:</strong> Cranfield University (Starting Oct 2026)</p>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p><strong>Erasmus+ Semester:</strong> Savonia University of Applied Sciences, Finland (Jan – May 2026)</p>
                     </div>
                 </div>
+
+                <!-- CPGE Prep Class -->
                 <div class="edu-item">
-                    <h3>CPGE PCSI-PSI</h3>
-                    <p><strong>Chateaubriand High School</strong> | 2022 - 2024</p>
-                    <p>Preparatory Classes for Engineering Schools. Mastery of advanced math and physics.</p>
+                    <h3>Preparatory Classes (CPGE PCSI-PSI)</h3>
+                    <p><strong>Lycée François René de Chateaubriand</strong> | Rennes, France — <em>2022 – 2024</em></p>
+                    <p>Intensive two-year undergraduate program in advanced Mathematics, Physics, and Engineering Sciences.</p>
+                    <p class="edu-project"><strong>Research Project (TIPE):</strong> Experimental study and modeling of magnetic braking systems for self-belay devices.</p>
                 </div>
+
+                <!-- Baccalaureate -->
+                <div class="edu-item">
+                    <h3>General Baccalaureate</h3>
+                    <p><strong>Lycée Marcel Gambier</strong> | Lisieux, France — <em>Graduated 2022</em></p>
+                    <p><strong>Majors:</strong> Mathematics, Physics-Chemistry | <strong>Option:</strong> Advanced Mathematics</p>
+                    <span class="badge">High Honors (Mention Très Bien)</span>
+                </div>
+
             </div>
         </section>
 
         <!-- Projects Section (Technical) -->
         <section id="projects" class="bg-light">
             <div class="container">
-                <h2 class="section-title">Technical Projects</h2>
+                <h2 class="section-title">Web Development Projects</h2>
                 <p>A selection of academic and personal projects demonstrating my technical skills:</p><br>
                 <div class="project-grid">
                     
-                    <!-- GitHub Project -->
+                    <!-- GitHub Portfolio -->
                     <article class="project-card">
                         <div class="project-info">
-                            <h3>Browser Programming Repository</h3>
-                            <p>A responsive portfolio website developed using HTML, CSS, and JavaScript. Features include dark mode, dynamic content, and fundamental backend integration concepts.</p>
+                            <h3>Web Portfolio</h3>
+                            <p>A responsive portfolio website showcasing engineering projects, academic coursework, and web applications with light/dark theme toggling.</p>
+                            <p class="tech-stack"><strong>Tech:</strong> HTML5, CSS3, JavaScript</p>
                             <div class="project-links">
-                                <a href="https://github.com/HeleneQ/browser-programming.git" class="link">GitHub Repository</a>
-                                <a href="https://heleneq.github.io/browser-programming/" class="link">Live Demo</a>
+                                <a href="https://github.com/HeleneQ/portfolio.git" class="link" target="_blank" rel="noopener">GitHub Repository</a>
                             </div>
                         </div>
                     </article>
 
+                    <!-- StreakFlow -->
                     <article class="project-card">
                         <div class="project-info">
                             <h3>StreakFlow – Habit Tracker</h3>
-                            <p>A habit tracking web application developed in 2026, consolidating key concepts learned in web development, including state management, UI design, and user interaction.</p>
+                            <p>A web application designed for tracking daily habits and goal streaks. Built as a standalone client-side application featuring local state persistence (LocalStorage) and lightweight smart assistance features based on a static AI model proof-of-concept.</p>
+                            <p class="tech-stack"><strong>Tech:</strong> JavaScript, LocalStorage, Vercel</p>
                             <div class="project-links">
-                                <a href="https://streakflow-bay.vercel.app/" class="link">Live App</a>
-                                <a href="https://github.com/HeleneQ/streakflow.git" class="link">GitHub Repository</a>
+                                <a href="https://streakflow-bay.vercel.app/" class="link" target="_blank" rel="noopener">Live App</a>
+                                <a href="https://github.com/HeleneQ/streakflow.git" class="link" target="_blank" rel="noopener">GitHub Repository</a>
                             </div>
                         </div>
                     </article>
 
+                    <!-- Note-Taking App -->
                     <article class="project-card">
                         <div class="project-info">
                             <h3>Note-Taking Application</h3>
-                            <p>A lightweight note-taking web app focused on simplicity and usability, implementing CRUD operations and clean UI principles.</p>
+                            <p>A minimalist note-taking application demonstrating CRUD operations and UI responsiveness. Operates fully on client-side storage without active database server maintenance.</p>
+                            <p class="tech-stack"><strong>Tech:</strong> HTML/CSS, JavaScript, Web Storage API</p>
                             <div class="project-links">
-                                <a href="https://note-app-azure-phi.vercel.app/" class="link">Live App</a>
-                                <a href="https://github.com/HeleneQ/note-app.git" class="link">GitHub Repository</a>
+                                <a href="https://note-app-azure-phi.vercel.app/" class="link" target="_blank" rel="noopener">Live App</a>
+                                <a href="https://github.com/HeleneQ/note-app.git" class="link" target="_blank" rel="noopener">GitHub Repository</a>
                             </div>
                         </div>
                     </article>
 
+                    <!-- Weather App -->
                     <article class="project-card">
                         <div class="project-info">
                             <h3>Weather Application</h3>
-                            <p>A dynamic web application using external APIs to display real-time weather data. Focus on asynchronous JavaScript and API integration.</p>
+                            <p>A dynamic web application fetching real-time meteorological data using asynchronous JavaScript and public third-party REST APIs.</p>
+                            <p class="tech-stack"><strong>Tech:</strong> Asynchronous JS, REST APIs, JSON</p>
                             <div class="project-links">
                                 <a href="weather.html" class="link">Live Demo</a>
                             </div>
@@ -204,7 +239,7 @@
                     <article class="project-card" id="data_demo">
                         <div class="project-info">
                             <h3>Data Integration Demo</h3>
-                            <p>Demonstration of real-time data fetching using asynchronous JavaScript and public APIs.</p>
+                            <p>Interactive client-side demonstration showcasing real-time data fetching, error handling, and DOM rendering using asynchronous JavaScript.</p>
                             <button id="load_data" class="btn btn-data">Fetch Data</button>
                             <div id="output_container">
                                 <p id="output_data">Awaiting input...</p>
@@ -212,60 +247,167 @@
                         </div>
                     </article>
 
-                    <!-- Workspace/Engineering -->
-                    <article class="project-card">
-                        <img src="img/technological-hall.jpg" alt="Engineering workspace" class="card-img">
-                        <div class="project-info">
-                            <h3>Engineering Systems Project</h3>
-                            <p>Practical work carried out in ESTIA’s technological hall, involving hardware-software integration and applied engineering systems.</p>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Creative Section (Sewing) -->
+        <!-- Creative & Applied Engineering Section -->
         <section id="creative" class="container">
-            <h2 class="section-title">Engineering Interests</h2>
-            <p class="section-subtitle">Applying engineering precision to garment construction, including pattern drafting, material stress analysis, and complex assembly.</p><br>
-            
+            <h2 class="section-title">Making &amp; Applied Engineering</h2>
+            <p class="section-subtitle">Combining hands-on craft, 3D CAD modeling, and physical experimentations with engineering rigor.</p><br>
+
             <div class="creative-grid">
-                <div class="carousel-container">
-                    <div class="carousel-track">
-                        <figure class="carousel-slide">
-                            <img src="img/dress-front.jpg" alt="Custom polka dot dress - front view">
-                            <figcaption>Front View</figcaption>
-                        </figure>
-                        <figure class="carousel-slide">
-                            <img src="img/dress-left.jpg" alt="Custom polka dot dress - side detail">
-                            <figcaption>Side Detail</figcaption>
-                        </figure>
-                        <figure class="carousel-slide">
-                            <img src="img/dress-model.jpg" alt="Dress technical patern">
-                            <figcaption>Technical Pattern</figcaption>
-                        </figure>
+
+                <!-- Pillar 1: Textile Engineering & Pattern Drafting -->
+                <article class="creative-card">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <figure class="carousel-slide">
+                                <img src="img/dress-front.jpg" alt="Construction front view">
+                                <figcaption>Assembly from the front</figcaption>
+                            </figure>
+                            <figure class="carousel-slide">
+                                <img src="img/dress-left.jpg" alt="Construction side view">
+                                <figcaption>Assembly from the side</figcaption>
+                            </figure>
+                        </div>
+                        <button class="carousel-btn prev" aria-label="Previous image">❮</button>
+                        <button class="carousel-btn next" aria-label="Next image">❯</button>
                     </div>
-                    
-                    <!-- Carousel Navigation -->
-                    <button class="carousel-btn prev" aria-label="Previous image">❮</button>
-                    <button class="carousel-btn next" aria-label="Next image">❯</button>
-                </div>
-                
-                <div class="video-showcase">
-                    <h3>Technique & Process</h3>
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/09NK2KpUlWE" title="Sewing Techniques: Biais" allowfullscreen></iframe>
+                    <div class="creative-info">
+                        <h3>Textile Engineering &amp; Garment Construction</h3>
+                        <p>Applying 2D geometry, structural alignment, and material stress analysis to pattern drafting, garment prototyping, and precision assembly.</p>
+                        <div class="interests-tags">
+                            <span class="tag">Pattern Drafting</span>
+                            <span class="tag">Material Behavior</span>
+                            <span class="tag">Precision Assembly</span>
+                        </div>
                     </div>
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/YX8mxEx_1k8" title="Sewing Techniques: Skirt" allowfullscreen></iframe>
+                </article>
+
+                <!-- Pillar 2: 3D CAD Modeling (OnShape) -->
+                <article class="creative-card">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <figure class="carousel-slide">
+                                <img src="img/lawnmower1.jpg" alt="CAD Lawnmower View 1">
+                                <figcaption>1st Render Visualization - CAD Lawnmower</figcaption>
+                            </figure>
+                            <figure class="carousel-slide">
+                                <img src="img/lawnmower2.jpg" alt="CAD Lawnmower View 2">
+                                <figcaption>2nd Render Visualization - CAD Lawnmower</figcaption>
+                            </figure>
+                        </div>
+                        <button class="carousel-btn prev" aria-label="Previous image">❮</button>
+                        <button class="carousel-btn next" aria-label="Next image">❯</button>
                     </div>
-                    <br><p class="caption">Researching and applying advanced stitching techniques.</p>
-                </div>
+                    <div class="creative-info">
+                        <h3>3D CAD &amp; Mechanical Modeling</h3>
+                        <p>Designing functional mechanical parts and enclosures using OnShape CAD, focusing on parametric modeling, assemblies, and tolerance analysis.</p>
+                        <div class="interests-tags">
+                            <span class="tag">OnShape (CAD)</span>
+                            <span class="tag">Parametric Design</span>
+                            <span class="tag">3D Assemblies</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Pillar 3: Applied Physics & TIPE Research -->
+                <article class="creative-card">
+                    <div class="creative-img-wrapper placeholder-wrapper">
+                        <div class="placeholder-content">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                            <span>Experimental Setup &amp; Data Collection</span>
+                        </div>
+                    </div>
+                    <div class="creative-info">
+                        <h3>Applied Physics &amp; Experimental Modeling</h3>
+                        <p>Experimental study and mathematical modeling of magnetic eddy-current braking systems designed for climbing self-belay mechanisms.</p>
+                        <div class="interests-tags">
+                            <span class="tag">Electromagnetism</span>
+                            <span class="tag">Experimental Modeling</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <section id="skill" class="bg-light">
-            <div id="skills" class="container"></div>
+        <!-- Skills Section Container -->
+        <section id="skills" class="bg-light container">
+            <!-- Dynamic skills injected here -->
+        </section>
+
+        <!-- Leadership & Personal Commitments Section -->
+        <section id="leadership" class="container">
+            <h2 class="section-title">Leadership &amp; Personal Commitments</h2>
+            <p class="section-subtitle">Extracurricular engagements showcasing discipline, adaptability, project management, and global exposure.</p><br>
+
+            <div class="leadership-grid">
+
+                <!-- Card 1: Equestrian Sports -->
+                <article class="leadership-card">
+                    <div class="leadership-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12 A10 10 0 0 1 12 22 A10 10 0 0 1 2 12 A10 10 0 0 1 22 12 Z"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Equestrian Sports &amp; Discipline</h3>
+                    <span class="role-date">15+ Years Practice | Galop 5 Certification</span>
+                    <p>Practicing advanced equestrian sport requiring constant emotional control, risk assessment, continuous routine discipline, and daily commitment to animal welfare and safety.</p>
+                    <div class="interests-tags">
+                        <span class="tag">Discipline</span>
+                        <span class="tag">Risk Management</span>
+                        <span class="tag">Perseverance</span>
+                    </div>
+                </article>
+
+                <!-- Card 2: Micro-Enterprise -->
+                <article class="leadership-card">
+                    <div class="leadership-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Micro-Entrepreneurship &amp; Event Animation</h3>
+                    <span class="role-date">Business Owner | BNC Services (2024 – 2025)</span>
+                    <p>Managed an autonomous micro-enterprise providing game mastering, interactive animation, and event hosting for escape games. Handled administrative management, client relations, flow control, and real-time problem solving under time constraints.</p>
+                    <div class="interests-tags">
+                        <span class="tag">Entrepreneurship</span>
+                        <span class="tag">Client Relations</span>
+                        <span class="tag">Real-Time Operations</span>
+                    </div>
+                </article>
+
+                <!-- Card 3: International Mobility -->
+                <article class="leadership-card">
+                    <div class="leadership-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <h3>International Mobility &amp; Adaptability</h3>
+                    <span class="role-date">Kuopio, Finland &amp; Cranfield, UK</span>
+                    <p>Demonstrated high autonomy and cross-cultural adaptability through academic and personal mobility in Nordic and Anglo-Saxon environments, managing independent logistics, housing, and integration.</p>
+                    <div class="interests-tags">
+                        <span class="tag">Cross-Cultural Communication</span>
+                        <span class="tag">Autonomy</span>
+                        <span class="tag">Adaptability</span>
+                    </div>
+                </article>
+
+                <!-- Card 4: Fitness Routine -->
+                <article class="leadership-card">
+                    <div class="leadership-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h1a4 4 0 0 1 4 4 4 4 0 0 1-4 4H2"/><path d="M6 12h12"/></svg>
+                    </div>
+                    <h3>Athletic Routine &amp; Outdoor Activities</h3>
+                    <span class="role-date">Functional Training, Water Aerobics &amp; Hiking</span>
+                    <p>Maintaining a structured weekly athletic regimen (functional training, kettlebell workouts, water aerobics, daily walking, and hiking), driving endurance, physical consistency, and stress resilience.</p>
+                    <div class="interests-tags">
+                        <span class="tag">Endurance</span>
+                        <span class="tag">Physical Consistency</span>
+                        <span class="tag">Stress Management</span>
+                    </div>
+                </article>
+
+            </div>
         </section>
 
     </main>
@@ -273,11 +415,11 @@
     <footer id="contact">
         <h2>Contact</h2>
         <button id="contact-btn" class="btn btn-contact">Quick Contact Info</button>
-        <p>Savonia UAS email: <a href="mailto:helene.quernet@edu.savonia.fi">helene.quernet@edu.savonia.fi</a></p>
-        <p>ESTIA email: <a href="mailto:helene.quernet@etu.estia.fr">helene.quernet@etu.estia.fr</a></p>
-        <p><a href="https://github.com/HeleneQ">GitHub account</a></p>
-        <p><a href="https://www.instagram.com/lelene.qrnt/">Private Instagram Account</a></p>
-        <p>&copy; © 2026 Hélène Quernet. All rights reserved.</p>
+        <p>ESTIA School email: <a href="mailto:helene.quernet@etu.estia.fr">helene.quernet@etu.estia.fr</a></p>
+        <p>Personal email: <a href="mailto:helene.quernet@orange.fr">helene.quernet@orange.fr</a></p>
+        <p><a href="https://github.com/HeleneQ" target="_blank" rel="noopener">GitHub account</a></p>
+        <p><a href="https://linkedin.com/in/hélène-quernet-942533326" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p>&copy; 2026 Hélène Quernet. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
